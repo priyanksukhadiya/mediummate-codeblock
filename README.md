@@ -282,7 +282,7 @@ If you find this plugin helpful, please consider:
 
 ## 🔗 Related Projects
 
-- **[MediumMate Theme](https://github.com/priyanksukhadiya/mediummate-theme)** - The WordPress theme this plugin is designed for
+- **[MediumMate Theme](https://github.com/priyanksukhadiya/mediummate)** - The WordPress theme this plugin is designed for
 - **[highlight.js](https://highlightjs.org/)** - The syntax highlighting library powering this plugin
 - **[WordPress Block Editor](https://wordpress.org/gutenberg/)** - The Gutenberg editor this plugin extends
 
