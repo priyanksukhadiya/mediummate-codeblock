@@ -17,7 +17,7 @@ A professional WordPress plugin that adds a beautiful, feature-rich code block t
 
 ## 🎯 Perfect for MediumMate Theme
 
-This plugin is specially designed to work seamlessly with the [MediumMate WordPress Theme](https://github.com/priyanksukhadiya/mediummate-theme), providing a consistent design language and optimal user experience. However, it works perfectly with any WordPress theme.
+This plugin is specially designed to work seamlessly with the [MediumMate WordPress Theme](https://github.com/priyanksukhadiya/mediummate), providing a consistent design language and optimal user experience. However, it works perfectly with any WordPress theme.
 
 ## ✨ New in Version 1.0.0
 
