@@ -1,0 +1,33 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "mediummate/code-box",
+    "version": "1.0.0",
+    "title": "MediumMate Code Box",
+    "category": "formatting",
+    "icon": "editor-code",
+    "description": "Display code snippets with a title in a stylish dark box with line numbers.",
+    "keywords": ["code", "snippet", "box", "programming"],
+    "textdomain": "mediummate-codeblock",
+    "attributes": {
+        "title": {
+            "type": "string",
+            "default": "Code Example"
+        },
+        "code": {
+            "type": "string",
+            "default": ""
+        },
+        "language": {
+            "type": "string",
+            "default": "javascript"
+        }
+    },
+    "supports": {
+        "html": false,
+        "align": ["wide", "full"]
+    },
+    "editorScript": "file:./editor.js",
+    "editorStyle": "file:./editor.css",
+    "style": "file:./style.css"
+}

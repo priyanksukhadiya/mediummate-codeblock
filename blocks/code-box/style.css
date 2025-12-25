@@ -1,0 +1,238 @@
+/**
+ * MediumMate Code Box Block - Frontend Styles
+ *
+ * @package MediumMate_CodeBlock
+ */
+
+.mm-code-box-wrapper {
+    margin: 25px 0;
+}
+
+.mm-code-box {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    overflow: hidden;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mm-code-box-header {
+    background-color: #2d2d2d;
+    padding: 12px 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 1px solid #404040;
+    position: relative;
+}
+
+.mm-code-box-dots {
+    display: flex;
+    gap: 8px;
+}
+
+.mm-code-box-dots .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.mm-code-box-dots .dot.red {
+    background-color: #ff5f56;
+}
+
+.mm-code-box-dots .dot.yellow {
+    background-color: #ffbd2e;
+}
+
+.mm-code-box-dots .dot.green {
+    background-color: #27c93f;
+}
+
+.mm-code-box-title {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Code Box Body - Container for line numbers and code */
+.mm-code-box-body {
+    display: flex;
+    overflow-x: auto;
+}
+
+/* Line Numbers */
+.mm-line-numbers {
+    display: flex;
+    flex-direction: column;
+    background-color: #252525;
+    padding: 20px 0;
+    text-align: right;
+    user-select: none;
+    border-right: 1px solid #404040;
+    flex-shrink: 0;
+}
+
+.mm-line-numbers .mm-line-number {
+    color: #6e7681;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    font-size: 14px;
+    line-height: 1.6;
+    padding: 0 15px;
+    min-width: 50px;
+}
+
+.mm-code-box-content {
+    padding: 7px;
+    margin: 0;
+    overflow-x: auto;
+    background: transparent;
+    flex: 1;
+}
+
+.mm-code-box-content code {
+    color: #e0e0e0;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    font-size: 14px;
+    line-height: 1.6;
+    white-space: pre;
+    display: block;
+    background: transparent;
+    padding: 0;
+}
+
+/* Override highlight.js background to use our theme */
+.mm-code-box-content .hljs {
+    background: transparent !important;
+    color: #e0e0e0;
+}
+
+/* Custom syntax highlighting colors that work with our dark theme */
+.mm-code-box-content .hljs-keyword,
+.mm-code-box-content .hljs-selector-tag,
+.mm-code-box-content .hljs-literal,
+.mm-code-box-content .hljs-section,
+.mm-code-box-content .hljs-link {
+    color: #c586c0;
+}
+
+.mm-code-box-content .hljs-string,
+.mm-code-box-content .hljs-title,
+.mm-code-box-content .hljs-name,
+.mm-code-box-content .hljs-type,
+.mm-code-box-content .hljs-attribute,
+.mm-code-box-content .hljs-symbol,
+.mm-code-box-content .hljs-bullet,
+.mm-code-box-content .hljs-built_in,
+.mm-code-box-content .hljs-addition,
+.mm-code-box-content .hljs-variable,
+.mm-code-box-content .hljs-template-tag,
+.mm-code-box-content .hljs-template-variable {
+    color: #ce9178;
+}
+
+.mm-code-box-content .hljs-comment,
+.mm-code-box-content .hljs-quote,
+.mm-code-box-content .hljs-deletion,
+.mm-code-box-content .hljs-meta {
+    color: #6a9955;
+}
+
+.mm-code-box-content .hljs-function,
+.mm-code-box-content .hljs-title.function_,
+.mm-code-box-content .hljs-title.class_ {
+    color: #dcdcaa;
+}
+
+.mm-code-box-content .hljs-number,
+.mm-code-box-content .hljs-regexp,
+.mm-code-box-content .hljs-subst {
+    color: #b5cea8;
+}
+
+.mm-code-box-content .hljs-tag,
+.mm-code-box-content .hljs-selector-id,
+.mm-code-box-content .hljs-selector-class,
+.mm-code-box-content .hljs-doctag {
+    color: #569cd6;
+}
+
+.mm-code-box-content .hljs-attr,
+.mm-code-box-content .hljs-variable {
+    color: #9cdcfe;
+}
+
+.mm-code-box-content .hljs-emphasis {
+    font-style: italic;
+}
+
+.mm-code-box-content .hljs-strong {
+    font-weight: bold;
+}
+
+/* Legacy syntax highlighting colors for backwards compatibility */
+.mm-code-box-content code .keyword {
+    color: #c586c0;
+}
+
+.mm-code-box-content code .string {
+    color: #ce9178;
+}
+
+.mm-code-box-content code .comment {
+    color: #6a9955;
+}
+
+.mm-code-box-content code .function {
+    color: #dcdcaa;
+}
+
+.mm-code-box-content code .number {
+    color: #b5cea8;
+}
+
+.mm-code-box-content code .tag {
+    color: #569cd6;
+}
+
+.mm-code-box-content code .attribute {
+    color: #9cdcfe;
+}
+
+/* Copy Button */
+.mm-code-box-copy {
+    position: absolute;
+    right: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #ccc;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    transition: all 0.2s ease;
+    z-index: 10;
+}
+
+.mm-code-box-copy:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.mm-code-box-copy:active {
+    transform: translateY(1px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .mm-code-box-content {
+        padding: 9px;
+    }
+    
+    .mm-code-box-content code {
+        font-size: 13px;
+    }
+}
